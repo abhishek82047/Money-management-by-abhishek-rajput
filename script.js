@@ -207,7 +207,7 @@ function renderRecentTransactions() {
         row.innerHTML = `
             <td>${formatDate(expense.date)}</td>
             <td><i class="fas fa-${getCategoryIcon(expense.categoryId)} me-2"></i>${expense.categoryName}</td>
-            <td>$${expense.amount.toFixed(2)}</td>
+            <td>₹${expense.amount.toFixed(2)}</td>
             <td>${expense.description || '-'}</td>
             <td>
                 <button class="btn btn-sm btn-outline-primary me-1 edit-expense" data-id="${expense.id}">
